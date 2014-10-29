@@ -14,7 +14,7 @@ else {
 }
 
 $exists = $connection->select_db($database);
-/*checks if datbase exists*/
+/*checks if datbase exists only runs if database doesnt exist*/
 if(!$exists) {
 	/*asks "questions"*/
 	$query = $connection->query("CREATE DATABASE $database");
@@ -22,6 +22,9 @@ if(!$exists) {
 	if($query) {
 		echo "successfully created database " . $database;
 	}
+}
+else {
+	echo "Database has been created";/*echos out to show database has been created*/
 }
 
 /*closes connection*/
