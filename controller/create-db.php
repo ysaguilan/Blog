@@ -26,6 +26,12 @@ if(!$exists) {
 else {
 	echo "Database has been created";/*echos out to show database has been created*/
 }
+/*will create table called posts*/
+$query = $connection->query("CREATE TABLE posts ("/*creates table for posts*/
+	. "id int(11) NOT NULL AUTO_INCREMENT,"/*can generate a billion unique ids, cant be empty, gives unique id to posts*/
+	 . "title varchar(255) NOT NULL,"/*ability to create titles containing 255 characters or less, cant be empty*/
+	  . "post text NOT NULL," /* for posts, contains text, cant be empty*/
+	  . "PRIMARY KEY (id))");/*the way table are connected to each other, tells table primary key is id*/
 
 /*closes connection*/
 $connection->close();
