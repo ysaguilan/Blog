@@ -7,10 +7,12 @@ $connection = new mysqli($host, $username, $password);
  /*if else conditional statement to die off program if there 
  is a connection error and echos success if theres no errors*/
 if($connection -> connect_error) {
-	die("Error: " . $connection->connect_error);
+	/*paragraph tags help oraganize echos under one another*/
+	die("<p>Error: " . $connection->connect_error . "</p>");
 }
 else {
-	echo "success: " . $connection->host_info;
+	/*paragraph tags help oraganize echos under one another*/
+	echo "<p>success: " . $connection->host_info . "</p>";
 }
 
 $exists = $connection->select_db($database);
@@ -20,11 +22,13 @@ if(!$exists) {
 	$query = $connection->query("CREATE DATABASE $database");
 	/*checks whether or not query was successful*/
 	if($query) {
-		echo "successfully created database " . $database;
+		/*paragraph tags help oraganize echos under one another*/
+		echo "<p>successfully created database " . $database . "</p>";
 	}
 }
 else {
-	echo "Database has been created";/*echos out to show database has been created*/
+	/*paragraph tags help oraganize echos under one another*/
+	echo "<p>Database has been created</P>";/*echos out to show database has been created*/
 }
 /*will create table called posts*/
 $query = $connection->query("CREATE TABLE posts ("/*creates table for posts*/
@@ -32,6 +36,16 @@ $query = $connection->query("CREATE TABLE posts ("/*creates table for posts*/
 	 . "title varchar(255) NOT NULL,"/*ability to create titles containing 255 characters or less, cant be empty*/
 	  . "post text NOT NULL," /* for posts, contains text, cant be empty*/
 	  . "PRIMARY KEY (id))");/*the way table are connected to each other, tells table primary key is id*/
+/*checks if table posts has been created successfully*/
+if($query) {
+	/*echos this out if successful*/
+	echo "<p>successfully created table posts</p>";
+}
+else{
+	/*echos connection error if not successful*/
+	/*paragraph tags help oraganize echos under one another*/
+	echo "<p>$connection->error</p>";
+}
 
 /*closes connection*/
 $connection->close();
