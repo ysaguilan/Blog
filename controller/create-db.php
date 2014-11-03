@@ -39,6 +39,7 @@ $query = $connection->query("CREATE TABLE posts ("/*creates table for posts*/
 /*checks if table posts has been created successfully*/
 if($query) {
 	/*echos this out if successful*/
+	/*paragraph tags help oraganize echos under one another*/
 	echo "<p>successfully created table posts</p>";
 }
 else{

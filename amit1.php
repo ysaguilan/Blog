@@ -1,10 +1,10 @@
-<html>
-<head><title>Amit4 php</title></head>
-<body>
+
 
 <?php
+/*inserts header code into this php file*/
+require_once(__DIR__ . "/view/header.php");
 /*includes information in database.php within create-db.php*/
 require_once(__DIR__ . "/controller/create-db.php");
+/*inserts footer code into this php file*/
+require_once(__DIR__ . "/view/footer.php");
 ?>
-</body>
-</html>
