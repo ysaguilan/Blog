@@ -9,3 +9,8 @@ div {
 	border-style: double;
 	
 }
+@media screen and (max-width:959px) {
+	body{
+		width: 90%;
+	}
+}
