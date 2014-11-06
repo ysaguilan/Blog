@@ -15,4 +15,11 @@
 <label for="post">Post: </label>
 <textarea name="post"></textarea>	
 </div>
+
+<div>
+<!--creates a button to submit post-->
+	<button type="submit">
+		Submit
+	</button>
+</div>
 </form>
