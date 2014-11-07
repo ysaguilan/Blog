@@ -1,0 +1,367 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"double"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"b",
+				"border-style"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bacck",
+				"background-color"
+			],
+			[
+				"l",
+				"label	Tag"
+			],
+			[
+				"erro",
+				"error"
+			],
+			[
+				"esl",
+				"else"
+			],
+			[
+				"post",
+				"posts"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"da",
+				"database"
+			],
+			[
+				"exi",
+				"exists"
+			],
+			[
+				"con",
+				"connection"
+			],
+			[
+				"f",
+				"fun	function …"
+			],
+			[
+				"public",
+				"public"
+			],
+			[
+				"icecr",
+				"Icecream"
+			],
+			[
+				"s",
+				"sprinkles"
+			],
+			[
+				"sc",
+				"scoops"
+			],
+			[
+				"sp",
+				"sprinkles"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"c",
+				"class	class …"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"pi",
+				"pizza"
+			],
+			[
+				"fo",
+				"food"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"read",
+				"read"
+			],
+			[
+				"my",
+				"myName"
+			],
+			[
+				"li",
+				"lizbeth"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"i",
+				"id	Attr"
+			],
+			[
+				"a",
+				"vertical-align"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"p",
+				"padding-top"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"m",
+				"max-width"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"co",
+				"container"
+			],
+			[
+				"siz",
+				"background-size"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"padd",
+				"padding-right"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/Blog/css/footer.css",
+		"/C/xampp/htdocs/Blog/model/config.php",
+		"/C/xampp/htdocs/Blog/view/navigation.php",
+		"/C/xampp/htdocs/Blog/view/form.php",
+		"/C/xampp/htdocs/Blog/post.php",
+		"/C/xampp/htdocs/Blog/model/database.php",
+		"/C/xampp/htdocs/Blog/view/header.php",
+		"/C/xampp/htdocs/Blog/controller/create-db.php",
+		"/C/xampp/htdocs/Blog/view/footer.php",
+		"/C/xampp/htdocs/classquiz/classes.php",
+		"/C/xampp/htdocs/Blog/amit1.php",
+		"/C/xampp/htdocs/Blog/controller/create-db",
+		"/C/xampp/htdocs/PHP/practice.php",
+		"/C/xampp/htdocs/PHP/amit1.php",
+		"/C/xampp/htdocs/phpquiz/quiz.php",
+		"/C/xampp/htdocs/amit/amit1.php",
+		"/C/xampp/htdocs/tutorialphp/index.php",
+		"/C/xampp/htdocs/tutorialphp/turtorial.php",
+		"/C/xampp/htdocs/tutorialphp/turoial.php",
+		"/C/Users/Student/Desktop/webpage/index.html",
+		"/C/Users/Student/Desktop/webpage/css/test1.html",
+		"/C/Users/Student/Desktop/test1/css/test1.css",
+		"/C/Users/Student/Desktop/webpage/css/contactme.css",
+		"/C/Users/Student/Desktop/webpage/contactme.html",
+		"/C/Users/Student/Desktop/webpage/gallery.html",
+		"/C/Users/Student/Desktop/webpage/css/gallery.css",
+		"/C/Users/Student/Desktop/webpage/css/main.css",
+		"/C/Users/Student/Desktop/webpage/project1.html",
+		"/C/Users/Student/Desktop/webpage/css/project1.css",
+		"/C/Users/Student/Desktop/webpage/css/test.css",
+		"/C/Users/Student/Desktop/webpage/test.html",
+		"/C/Users/Student/Desktop/webpage/contactme.css"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"img"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "create-db.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

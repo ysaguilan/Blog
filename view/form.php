@@ -10,6 +10,11 @@
 <label for="title">Title: </label>
 <input type="text" name="title"/>
 </div>
+
+<div>
+	<label for="username">Username: </label>
+	<input type="text" name="username"/>
+</div>
 <!--make a posts text box to create a multi word post-->
 <div>
 <label for="post">Post: </label>

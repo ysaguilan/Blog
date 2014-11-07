@@ -4,6 +4,15 @@ body {
 	/*adds a double lined boder around body*/
 	border-style: double;
 }
+nav{
+	width: 174px;
+	height: 51px;
+	color: gold;
+	background-color: grey;
+	box-shadow: 10px 10px 5px #6600CC;
+	text-align: center;
+	line-height: 30px;
+}
 div {
 	/*adds a double lined boder around div*/
 	border-style: double;
