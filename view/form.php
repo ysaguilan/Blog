@@ -24,7 +24,7 @@
 <div>
 <!--creates a button to submit post-->
 	<button type="submit">
-		Submit
+		Submit to the Ogre Lord Shrek
 	</button>
 </div>
 </form>
