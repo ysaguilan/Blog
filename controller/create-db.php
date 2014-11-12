@@ -2,7 +2,7 @@
 /*gives us access to model folder checks if file is in
  memory if so use the file stored in memory*/
 require_once(__DIR__ . "/../model/database.php");
-
+/*creates connection with mysqli*/
 $connection = new mysqli($host, $username, $password);
  /*if else conditional statement to die off program if there 
  is a connection error and echos success if theres no errors*/
