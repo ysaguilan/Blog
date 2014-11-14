@@ -1,11 +1,11 @@
-<?php
+<?php/*Objects are important because they let us store,access the information, or modify the information*/
 /*gives us access to model folder checks if file is in
  memory if so use the file stored in memory*/
 require_once(__DIR__ . "/../model/config.php");
 /*creates connection with mysqli*/
 $connection = new mysqli($host, $username, $password);
  /*if else conditional statement to die off program if there 
- is a connection error and echos success if theres no errors*/
+ is a connection($connection is an object) error and echos success if theres no errors*/
 if($connection -> connect_error) {
 	/*paragraph tags help oraganize echos under one another*/
 	die("<p>Error: " . $connection->connect_error . "</p>");
