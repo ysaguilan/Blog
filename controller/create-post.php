@@ -1,16 +1,21 @@
 <?php
 /*takes us out of the controller folder into model folder to access database file*/
-require__once(__DIR__ . "/../model/database.php");
+require_once(__DIR__ . "/../model/database.php");
 /*creates connection to the database using these variables*/
-$connection = new mysqli($host, $username, $password);
+$connection = new mysqli($host, $username, $password, $database);
 
 /*filters input to make sure there's no malicuos things occuring in th input for title*/
 $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 /*filters input to make sure there's no malicuos things occuring in th input for post*/
 $post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
-/*echos out title and title variable*/
-echo "<p>title: $title</p>";
-/*echos out post and post variable*/
-echo "<p>post: $post</p>";
+
+$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
+
+if ($query) {
+	echo "<p>successfully inserted post:$title</p>";
+}
+else{
+	echo "<p>" . $connection->error . "</p>";
+}
 /*closes connection*/
-$connection ->close();
+$connection->close();

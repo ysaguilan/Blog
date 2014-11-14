@@ -1,25 +1,34 @@
 /*use this to make header file beautiful*/
 body {
-	background-image: url("http://upload.wikimedia.org/wikipedia/commons/0/0a/Blue_sky_south_of_France.jpg");
+	background-color: blue;
 	/*adds a double lined boder around body*/
 	border-style: double;
+	border-color: white;
 }
 nav{
 	width: 174px;
-	height: 51px;
-	color: gold;
+	height: 56px;
+	color: black;
+	border-style: double;
+	border-color: white;
+	padding-top: 0px;
+	padding-bottom: -4px;
 	background-color: grey;
 	box-shadow: 10px 10px 5px #6600CC;
 	text-align: center;
 	line-height: 30px;
 }
+
 div {
 	/*adds a double lined boder around div*/
 	border-style: double;
+	border-color: white;
 	
+
 }
-@media screen and (max-width:959px) {
+@media screen and(min-width: 320px) {
 	body{
-		width: 90%;
+		background-color: red;
 	}
+
 }
