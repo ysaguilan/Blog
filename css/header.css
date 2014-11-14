@@ -1,6 +1,6 @@
 /*use this to make header file beautiful*/
 body {
-	background-color: blue;
+	background-color: yellow;
 	/*adds a double lined boder around body*/
 	border-style: double;
 	border-color: white;
@@ -26,9 +26,16 @@ div {
 	
 
 }
-@media screen and(min-width: 320px) {
+/* media query for iphone 3gs-6+, blackberryZ10 & Z30, google nexus 4-5, google nexus s, galaxy note 1-3, samsung galaxy  */
+@media (max-width: 767px) {
 	body{
 		background-color: red;
 	}
 
+}
+/*media query for galaxy tab ipad 1-4 & mini, blackberry playbook*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	body{
+		background-color: blue;
+	}
 }
