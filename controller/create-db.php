@@ -1,7 +1,7 @@
 <?php
 /*gives us access to model folder checks if file is in
  memory if so use the file stored in memory*/
-require_once(__DIR__ . "/../model/database.php");
+require_once(__DIR__ . "/../model/config.php");
 /*creates connection with mysqli*/
 $connection = new mysqli($host, $username, $password);
  /*if else conditional statement to die off program if there 

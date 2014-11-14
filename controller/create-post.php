@@ -1,6 +1,6 @@
 <?php
-/*takes us out of the controller folder into model folder to access database file*/
-require_once(__DIR__ . "/../model/database.php");
+/*takes us out of the controller folder into model folder to access config file*/
+require_once(__DIR__ . "/../model/config.php");
 /*creates connection to the database using these variables*/
 $connection = new mysqli($host, $username, $password, $database);
 
