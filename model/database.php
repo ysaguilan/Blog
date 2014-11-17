@@ -17,4 +17,16 @@ its public because it needs to be able to be access from where ever in any file*
 		$this->password = $password;
 		$this->database = $database;
 	}
+	/*opens connection*/
+	public function openConnection() {
+
+	}
+	/*closes connection*/
+	public function closeConnection() {
+
+	}
+}
+/*runs query*/
+public function query($string) {
+
 }
