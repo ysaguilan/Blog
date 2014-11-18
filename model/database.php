@@ -21,7 +21,7 @@ its public because it needs to be able to be access from where ever in any file*
 	public function openConnection() {
 		/*establishes new connection*/
 		$this ->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
-		/*checks for connection error for connection thats created above, closes connection if theres error */
+		/*checks for connection error for connection thats created above, closes connection if theres error, if no returns NULL */
 		if($this->connection -> connect_error) {
 	/*paragraph tags help oraganize echos under one another*/
 	die("<p>Error: " . $this->connection->connect_error . "</p>");
@@ -29,7 +29,10 @@ its public because it needs to be able to be access from where ever in any file*
 	}
 	/*closes connection*/
 	public function closeConnection() {
-
+		/*checks if variable has been set, checkecks there's any information present in the variable, if yes returns true*/
+		if (isset($this->connection)) {
+			$this->connection->close()
+		}
 	}
 }
 /*runs query*/
