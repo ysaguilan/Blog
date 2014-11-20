@@ -8,6 +8,7 @@ class Database {
 	private $username;
 	private $password;
 	private $database;
+	public $error;
 /*constructors are important because it allows us to build objects of type Database
 its public because it needs to be able to be access from where ever in any file*/
 	public function __construct($host, $username, $password, $database){
@@ -50,6 +51,7 @@ else {
 	public function openConnection() {
 		/*establishes new connection*/
 		$this ->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+
 		/*checks for connection error for connection thats created above, closes connection if theres error, if no returns NULL */
 		if($this->connection -> connect_error) {
 	/*paragraph tags help oraganize echos under one another*/
@@ -70,6 +72,10 @@ public function query($string) {
 	$this->openConnection();
 	/*queries connection, excutes a query in database*/
 	$query = $this->connection->query($string);
+/*is query is false turns it to true*/
+	if(!$query){
+		$this->error = $this->connection->error
+	}
 	/*closes connection*/
 	$this->closeConnection();
 	/*returns results of $query*/
