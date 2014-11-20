@@ -7,3 +7,5 @@ $path ="/Blog/";
 	$username = "root"; /*stores usernames*/
 	$password = "root"; /*stores password*/
 	$database = "blog_db"; /*stores info in blog database*/
+	/*uses the mysqli to create new object: database, this is based off the class named database*/
+	$connection = new Database($host, $username, $password, $database);

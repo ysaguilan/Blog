@@ -1,8 +1,7 @@
 <?php
 /*takes us out of the controller folder into model folder to access config file*/
 require_once(__DIR__ . "/../model/config.php");
-/*creates connection to the database using these variables*/
-$connection = new mysqli($host, $username, $password, $database);
+
 
 /*filters input to make sure there's no malicuos things occuring in th input for title*/
 $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
@@ -17,5 +16,3 @@ if ($query) {
 else{
 	echo "<p>" . $connection->error . "</p>";
 }
-/*closes connection*/
-$connection->close();
