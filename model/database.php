@@ -37,5 +37,12 @@ its public because it needs to be able to be access from where ever in any file*
 }
 /*runs query*/
 public function query($string) {
-
+	/*calls on open connection function*/
+	$this->openConnection();
+	/*queries connection, excutes a query in database*/
+	$query = $this->connection->query($string);
+	/*closes connection*/
+	$this->closeConnection();
+	/*returns results of $query*/
+	return $query;
 }
