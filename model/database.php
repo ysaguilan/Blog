@@ -7,7 +7,7 @@ class Database {
 	private $host;
 	private $username;
 	private $password;
-	private $database
+	private $database;
 /*constructors are important because it allows us to build objects of type Database
 its public because it needs to be able to be access from where ever in any file*/
 	public function __construct($host, $username, $password, $database){
@@ -16,7 +16,36 @@ its public because it needs to be able to be access from where ever in any file*
 		$this->username = $username;
 		$this->password = $password;
 		$this->database = $database;
+
+		$this->connection = new mysqli($host, $username, $password);
+ /*if else conditional statement to die off program if there 
+ is a connection($connection is an object) error and echos success if theres no errors*/
+if($this->connection -> connect_error) {
+	/*paragraph tags help oraganize echos under one another*/
+	die("<p>Error: " . $connection->connect_error . "</p>");
+}
+else {
+	/*paragraph tags help oraganize echos under one another*/
+	echo "<p>success: " . $this->connection->host_info . "</p>";
+}
+
+$exists = $this->connection->select_db($database);
+/*checks if datbase exists only runs if database doesnt exist*/
+if(!$exists) {
+	/*asks "questions"*/
+	$query = $this->connection->query("CREATE DATABASE $database");
 	}
+	/*checks whether or not query was successful*/
+	if($query) {
+		/*paragraph tags help oraganize echos under one another*/
+		echo "<p>successfully created database " . $database . "</p>";
+	}
+
+else {
+	/*paragraph tags help oraganize echos under one another*/
+	echo "<p>Database has been created</P>";/*echos out to show database has been created*/
+}
+	
 	/*opens connection*/
 	public function openConnection() {
 		/*establishes new connection*/
