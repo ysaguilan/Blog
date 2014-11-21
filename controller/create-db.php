@@ -5,7 +5,7 @@ require_once(__DIR__ . "/../model/config.php");
 /*creates connection with mysqli*/
 
 /*will create table called posts*/
-$query = $connection->query("CREATE TABLE posts ("/*creates table for posts*/
+$query = $_SESSION["connection"]->query("CREATE TABLE posts ("/*creates table for posts*/
 	. "id int(11) NOT NULL AUTO_INCREMENT,"/*can generate a billion unique ids, cant be empty, gives unique id to posts*/
 	 . "title varchar(255) NOT NULL,"/*ability to create titles containing 255 characters or less, cant be empty*/
 	  . "post text NOT NULL," /* for posts, contains text, cant be empty*/
@@ -19,7 +19,7 @@ if($query) {
 else{
 	/*echos connection error if not successful*/
 	/*paragraph tags help oraganize echos under one another*/
-	echo "<p>$connection->error</p>";
+	echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
 
 
