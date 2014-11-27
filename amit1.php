@@ -1,3 +1,4 @@
+
 <?php
 /*inserts header code into this php file*/
 require_once(__DIR__ . "/view/header.php");
