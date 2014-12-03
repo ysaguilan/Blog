@@ -7,11 +7,11 @@ require_once(__DIR__ . "/../model/config.php");
 
 /*will create table called posts*/ /*creates table for posts*/
 $query = $_SESSION["connection"]->query("CREATE TABLE posts ("
-	. "id int(11) NOT NULL AUTO_INCREMENT,"	/*ability to create titles containing 255 characters or less, cant be empty*/
-	. "title varchar(255) NOT NULL,"/* for posts, contains text, cant be empty*/
-	. "post text NOT NULL," /*the way table are connected to each other, tells table primary key is id*/
-	. "PRIMARY KEY (id))");/*checks if table posts has been created successfully*/
-
+	. "id int(11) NOT NULL AUTO_INCREMENT,"	
+	. "title varchar(255) NOT NULL,"/*ability to create titles containing 255 characters or less, cant be empty*/
+	. "post text NOT NULL," /* for posts, contains text, cant be empty*/
+	. "PRIMARY KEY (id))");/*the way table are connected to each other, tells table primary key is id*/
+/*checks if table posts has been created successfully*/
 if($query) {
 	/*echos this out if successful*/
 	/*paragraph tags help oraganize echos under one another*/
@@ -22,6 +22,21 @@ else{
 	/*paragraph tags help oraganize echos under one another*/
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
-
-
+/*creates table for users called users*/
+$query = $_SESSION["connection"]->query("CREATE TABLE users ("
+	. "id int(11) NOT NULL AUTO_INCREMENT,"
+	 . "username varchar(30) NOT NULL,"/*for usernames, can be 30 characters or less, cant be empty*/
+	 . "email varchar(50) NOT NULL,"/*for emails, can be 50 characters or less, cant be empty*/
+	 . "password char(128) NOT NULL," /*for passwords, can be 128 characters or less, cant be empty*/
+	 . "salt char(128) NOT NULL," /*makes it harder for hacker to inject scripts into website, up to 128 characters, cant be empty*/
+	 . "PRIMARY KEY (id))");/*the way table are connected to each other, tells table primary key is id*/
+/*checks if query "users was successfully created"*/
+if ($query) {
+	/*echos this if successful*/
+		echo "<p>successfully created table users</p>";
+}
+else{
+	/*echos connection error if not successful*/
+	echo "<p>" . $_SESSION["connection"]->error . "</p>";
+}	
 ?>

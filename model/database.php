@@ -44,7 +44,7 @@ public function openConnection() {
 	$this ->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
 	/*checks for connection error for connection thats created above, closes connection if theres error, if no returns NULL */
-	if($this->connection ->connect_error) {
+	if($this->connection->connect_error) {
 		/*paragraph tags help oraganize echos under one another*/
 		die("<p>Error: " . $this->connection->connect_error . "</p>");
 											}
