@@ -1,5 +1,6 @@
+<h1>Register</h1>
 <!--creates a form for registration-->
-<form>
+<form method="post" action= "<?php echo $path . "controller/create-user.php";?>">
 
 <!--creates text space for email-->
 	<div>
