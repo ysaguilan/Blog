@@ -1,3 +1,9 @@
+
+<?php
+/*inserts config code into this php file*/
+require_once(__DIR__ . "/../model/config.php");
+?>
+
 <h1>Register</h1>
 <!--creates a form for registration-->
 <form method="post" action= "<?php echo $path . "controller/create-user.php";?>">
