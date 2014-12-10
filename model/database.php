@@ -25,7 +25,7 @@ if ($this->connection->connect_error) {
 	die("<p>Error: " . $this->connect_error . "</p>");
 }
 
-$exists = $this->connection->select_db($database);
+
 
 if (!exists) {
 	$query - $this->connection->query("CREATE DATABASE $database");
