@@ -1,3 +1,4 @@
+
 <?php
 /*takes us out of the controller folder into model folder to access config file*/
 require_once(__DIR__ . "/../model/config.php");
