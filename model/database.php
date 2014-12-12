@@ -28,7 +28,7 @@ if ($this->connection->connect_error) {
 
 
 if (!exists) {
-	$query - $this->connection->query("CREATE DATABASE $database");
+	$query = $this->connection->query("CREATE DATABASE $database");
 
 	if ($query) {
 		echo "<p>successfully created database:" . $database . "</p>";

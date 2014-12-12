@@ -8,8 +8,8 @@ $query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE 
 if($query->num_rows == 1){
 	$row = $query->fetch_array();
 
-	if ($row["password"] == crypt($password, $row["$salt"])) {
-		echo "<p>Login successful</p>";
+	if ($row['password'] === crypt($password, $row['salt'])) {
+		echo "<p>" . "Login successful" . "</p>";
 	}
 	else{
 		echo "<p>Invalid Username and Password</p>";
@@ -18,4 +18,3 @@ if($query->num_rows == 1){
 else{
 		echo "<p>Invalid Username and Password</p>";
 	}
-?>
