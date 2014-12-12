@@ -2,6 +2,13 @@
 <?php
 /*inserts config code into this php file*/
 require_once(__DIR__ . "/../model/config.php");
+
+require_once(__DIR__ . "/../controller/login-verify.php");
+
+if (!authenticateUser()) {
+	header("Location: " . $path . "amit1.php");
+	die();
+}
 ?>
 <!--creates header with bigges font size-->
 <h1>

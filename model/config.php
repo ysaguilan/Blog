@@ -13,7 +13,7 @@ $path ="/Blog/";
 	$database = "blog_db"; /*stores info in blog database*/
 
 	/*checks is session variable; Session variables hold database*/
-	if (!isset($_SESSION["connection"])) {
+	if(!isset($_SESSION["connection"])) {
 		
 	/*uses the mysqli to create new object: database, this is based off the class named database*/
 		$connection = new Database($host, $username, $password, $database);

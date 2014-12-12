@@ -3,6 +3,12 @@
 /*takes us out of the controller folder into model folder to access config file*/
 require_once(__DIR__ . "/../model/config.php");
 
+require_once(__DIR__ . "/../controller/login-verify.php");
+
+if (!authenticateUser()) {
+	header("Location: " . $path . "amit1.php");
+	die();
+}
 
 /*filters input to make sure there's no malicuos things occuring in th input for title*/
 $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
