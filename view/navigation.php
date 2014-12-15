@@ -2,16 +2,18 @@
 /*inserts navigation code into this php file*/
 require_once(__DIR__ . "/../model/config.php");
 require_once(__DIR__ . "/../controller/login-verify.php");
-
-if (!authenticateUser()) {
+/*does not allow access if user is not authenticated redirects to index*/
+	if (!authenticateUser()) {
 	header("Location: " . $path . "amit1.php");
-	die();
-}
+		die();
+		}
+
 ?>
-<nav>
+<nav class="menu">
 <!--creates un ordered list-->
 	<ul>
 	<!--list item-->
 		<li><a href="<?php echo $path . "post.php"?>"> Blog Post Forum</a></li>
+		<li><a href="<?php echo"$path" . "controller/logout-user.php"?>">Logout</a></li>
 	</ul>
 	</nav>

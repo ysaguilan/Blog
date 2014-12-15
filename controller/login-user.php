@@ -11,6 +11,8 @@ if($query->num_rows == 1){
 	if ($row['password'] === crypt($password, $row['salt'])) {
 		$_SESSION["authenticated"] = true;
 		echo "<p>Login successful</p>";
+	header("Location: " . $path . "amit1.php");
+	die();
 	}
 	else{
 		echo "<p>Invalid Username and Password</p>";

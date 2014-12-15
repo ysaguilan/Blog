@@ -1,7 +1,7 @@
 <?php
 require_once(__DIR__ . "/../model/config.php");
 ?>
-
+<link rel="stylesheet" type="text/css" href="/../Blog/css/loginform.css">
 <h1>Log In</h1>
 
 <form method="post" action="<?php echo $path . "controller/login-user.php";?>">

@@ -7,7 +7,7 @@ h1{
 body {
 	    background-image: url("http://www.access4.eu/_media/home_hg.jpg");
 	    background-repeat: no-repeat;
-	    background-size: 200%;
+	    background-size: 50000px;
 	/*adds a double lined boder around body*/
 		border-style: double;
 		border-color: white;
@@ -24,6 +24,8 @@ label{
 }	
 .post{
 	padding: 50px;
+	background-color:beige;
+	text-align: center;
 }
 
 textarea{
@@ -35,7 +37,10 @@ button:hover{
 	
 
 }
-nav{
+a{
+	color: black;
+}
+.menu{
 	width: 174px;
 	height: 56px;
 	color: black;
@@ -49,18 +54,25 @@ nav{
 	line-height: 30px;
 }
 nav:hover{
-	width: 190px;
-	height: :90px;
-	font-size:20px;
 	list-style-image: url("http://www.aums.org.au/images/right.gif");
-	list-style-position: outside;
+}
+.login{
+width: auto;
+height: 36px;
+padding: 0 11px;
+color: red;
+white-space: normal;
+text-align: right;
+background-position: right;
+background-repeat: no-repeat;
 }
 
-a{
-	color: purple;
-}
 a:hover{
 	color: yellow;
+		width: 190px;
+	height: :90px;
+	font-size:20px;
+	list-style-position: outside;
 }
 
 div {
