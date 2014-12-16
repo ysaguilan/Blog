@@ -1,40 +1,43 @@
 /*use this to make header file beautiful*/
 h1{
 	text-align: center;
-	color: white;
+	color: black;
 
 }
 body {
-	    background-image: url("http://www.access4.eu/_media/home_hg.jpg");
+	    background-image: url("http://thefabricexchange.com/product_images/y/665/Beige-Light_Brown__93404.jpg");
 	    background-repeat: no-repeat;
 	    background-size: 50000px;
 	/*adds a double lined boder around body*/
 		border-style: double;
+		border-spacing: 12px;
 		border-color: white;
 }
 #title1{
-	box-shadow: 10px 10px 5px #3080B4;
+	box-shadow: 10px 10px 5px #8E724C;
 
 }
 
 label{
 	font-size: 20px;
-	color: white;
+	color: black;
 	padding-bottom: 20px;
 }	
 .post{
 	padding: 50px;
-	background-color:beige;
+	background: rgb(208, 161, 98);
 	text-align: center;
 }
 
 textarea{
-	box-shadow: 25px 25px 15px #3080B4;
+	box-shadow: 25px 25px 15px #8E724C;
 	padding-bottom: 50px;
 }
+.submit{
+	padding-left: 640px;
+}
 button:hover{
-	color: lightblue;
-	
+	color: brown;
 
 }
 a{
@@ -60,7 +63,7 @@ nav:hover{
 width: auto;
 height: 36px;
 padding: 0 11px;
-color: red;
+color: gold;
 white-space: normal;
 text-align: right;
 background-position: right;

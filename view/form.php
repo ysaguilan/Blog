@@ -1,4 +1,4 @@
-
+<a href="/../Blog/amit1.php"> Back </a>
 <?php
 /*inserts config code into this php file*/
 require_once(__DIR__ . "/../model/config.php");
@@ -29,7 +29,7 @@ if (!authenticateUser()) {
 <textarea name="post"></textarea>	
 </div>
 
-<div>
+<div class="submit">
 <!--creates a button to submit post-->
 	<button type="submit">
 		Submit
