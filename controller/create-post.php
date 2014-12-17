@@ -25,6 +25,7 @@ if ($query) {
 	echo "<p>successfully inserted post:$title</p>";
 	/*echos date and time (current)*/                                 /*formats how time looks*/
 	echo "Posted on: " . $date->format("M/D" ." " . "d/Y") . " at " . $time->format("g:i");
+	header("Location: " . $path . "amit1.php");
 }
 else{
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";

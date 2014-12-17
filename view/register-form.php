@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="/../Blog/bootstrap/bootstrap.min.css">
 <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="/../Blog/css/registerform.css">
-<a href="/../Blog/amit1.php"> Back </a>
+<a class= "back" href="/../Blog/amit1.php"> Back </a>
 <?php
 /*inserts config code into this php file*/
 require_once(__DIR__ . "/../model/config.php");
@@ -29,6 +29,6 @@ require_once(__DIR__ . "/../model/config.php");
 	</div>
 <!--creates button called submit-->
 	<div class="register">
-	<button type="submit">Submit</button>
+	<button type="submit"><a href="/../Blog/amit1.php"></a> Submit </button>
 	</div>
 </form>

@@ -4,8 +4,21 @@ h1{
 	color: black;
 
 }
+nav{
+	background-color: rgb(90, 89, 90);
+}
+section{
+	border-style: ridge;
+	border-color: rgb(58, 57, 57);
+	border-radius: 10px;
+	background-color: ghostwhite;
+}
+h2{
+	border-bottom-style: groove;
+	 
+}
 body {
-	    background-image: url("http://thefabricexchange.com/product_images/y/665/Beige-Light_Brown__93404.jpg");
+	    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQSEhUUEhQUFBQUFxcUFBQUFBcUFBQXFxQcFxcUFBQYHCggGBwlHBQUITEhJSksLi4uFx8zODMsNygtLiwBCgoKDAwMDgwMDiwZFBkrKywsLDcsLDcsLCwrLCwsLCwrLCwsLCw3NzcsLCwsNyw3NzcsNyw3LCssNywsLCwsLP/AABEIAOEA4QMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQL/xAAdEAEBAQABBQEAAAAAAAAAAAAAARGRAiExQfAS/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCACmILVBAQKy1UBUpAFVlQKQqKKIoBoAGlAKmlIBAMAAAIAM4oA3oIgqKgAGAIoCCoAqKBEqmAiiAAAqVSqIAgqKgEIUUWIFARcAaFRBAANEagIFAEUBFRQBcMBEqiiBBBUooIKAi0QARQKgqhiKINIqAWFEBRFgBQAKGAjSVYAU0oIBQRcRVAIQAWoAigIYUQBUUaDQEAiAioAqmAgVQAARQApggLCiAARQMAAWgJUqgIIsAABRkBowEANANVAFqAChgCLEAVKqAAAipVgLqCgAKIi1AAKgIQ0FFFRSBUUoAIVTACVAFRUARQAAEFiAFWAGggKJqgGoVQpUEALVUTkOeRBswACkARQAJFxAEaTASi2IBQFEFsASLUEDTQgBQBAiqIqYoGFBA1FwUapKggokqgoigoCiJVEEhYsASpVRQABILEBFMIBItDQQWogIALKVBQF/QCgIBBYCxUaBApAEAAEoFMKKCKlQBCKLEUBMUAKi6gIFIgCihqLiA1gGIAaQGiIoLogBaGAFKiaCmJVUEBBCACggKIVQAtQShQFgCh2AEaqUKioBAaXGY0AAAVIoJQiAVYYAIAJgACigzFVMBCqlBIKlAUhVE0UBpKqVBBQCNSstAQqKAgoIBgBVTAEXCqMqmKgRUUAAEStJYCIqARQUMRrUQaSgCKgCqiwAAAQAVCg1UtEBYgAoigEIUFS0SgqVUBIVUoEABcE1AaogC1IAL0tACAAAAkQAaqVAFKAE9L0gBEoKLCggrFAFL4AGb9wsAFAB//2Q==");
 	    background-repeat: no-repeat;
 	    background-size: 50000px;
 	/*adds a double lined boder around body*/
@@ -25,7 +38,9 @@ label{
 }	
 .post{
 	padding: 50px;
-	background: rgb(208, 161, 98);
+	background: rgb(137, 137, 137);
+	border-style: double;
+	border-color: ghostwhite;
 	text-align: center;
 }
 
@@ -52,12 +67,9 @@ a{
 	padding-top: 0px;
 	padding-bottom: -4px;
 	background-color: grey;
-	box-shadow: 10px 10px 5px #3080B4;
+	box-shadow: 10px 10px 5px rgb(81, 81, 81);
 	text-align: center;
 	line-height: 30px;
-}
-nav:hover{
-	list-style-image: url("http://www.aums.org.au/images/right.gif");
 }
 .login{
 width: auto;
@@ -69,7 +81,6 @@ text-align: right;
 background-position: right;
 background-repeat: no-repeat;
 }
-
 a:hover{
 	color: yellow;
 		width: 190px;
@@ -80,8 +91,6 @@ a:hover{
 
 div {
 	/*adds a double lined boder around div*/
-	border-style: double;
-	border-color: white;
 	
 
 }

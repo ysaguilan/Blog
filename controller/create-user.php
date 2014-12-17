@@ -17,7 +17,7 @@ $query = $_SESSION["connection"]->query("INSERT INTO users SET "
 	. "salt = '$salt'");
 
 if($query){
-	echo "sucessfully created user: $username";
+	echo "<p>sucessfully created user:" . $username . "</p>";
 }
 else{
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";

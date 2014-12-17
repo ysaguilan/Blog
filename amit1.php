@@ -5,16 +5,18 @@
 <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
 <!--link to css file to make it look fancy-->
 <link rel="stylesheet" type="text/css" href="css/header.css">
-
+<div class="nav">
 <nav class = "login">
 	<li>
 		<a href="view/login-form.php">Login </a><strong>/</strong>
 		<a href="view/register-form.php"> Register</a>
 	</li>
 </nav>
-
+</div>
+<h1>Blog</h1>
 
 <?php
+	
 require_once(__DIR__ . "/controller/login-verify.php");
 /*inserts header code into this php file*/
 require_once(__DIR__ . "/view/header.php");
